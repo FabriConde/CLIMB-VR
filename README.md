@@ -4,10 +4,7 @@
 > CLIENTE
 
 Soy un escalador y tengo el siguente problema: Quiero ver las zonas de escalada que hay por mi zona ya que no hay información sobre ello en Internet.
-> DESARROLLADOR
 
-- El escalador quiere ver la zonas de escalada para ir los fines de semana que se adapte a su nivel
-- Por ahora hay poca información y si la hay está en wikiloc
 > VALIDACIÓN
 
 * [x] ¿Se trata de un problema real del que se tenga conocimiento personal?
