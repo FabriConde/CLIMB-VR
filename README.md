@@ -3,7 +3,7 @@
 ## OBJETIVO 0
 > CLIENTE
 
-Soy un escalador y tengo el siguente problema: Quiero ver las zonas de escalada que hay por mi zona ya que no hay información sobre ello en Internet y es necesario saber el grado de las vías que se va a escalar por seguridad.
+Como escalador me hallo con el problema de la falta de información que hay de los sectores de escalada en Granada. Buscando por Internet me he dado cuenta de que los croquis que existen están muy desactualizados o simplemente no existen.
 
 > Documentación
 
