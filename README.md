@@ -3,17 +3,28 @@
 ## OBJETIVO 0
 ### CLIENTE
 
-Como escalador me hallo con el problema de la falta de información que hay de los sectores de escalada en Granada.
-Los sectores de escalada tienen un número de vías y este depende de cada sector, cada vía tiene su grado que ronda desde V (fácil) hasta 9c (muy difícil).
+Como escalador me hallo con el problema de la falta de información que hay de los sectores de escalada en Vélez-Rubio.
+Los sectores de escalada tienen un número de vías y este depende de cada sector, cada vía tiene su nombre y grado que ronda desde V (fácil) hasta 9c (muy difícil).
 El problema es que los escaladores de las zonas son los que tienen las direcciones de los sectores de escalada, el número de vías y el grado de cada vía, pero no tienen nigún sitio donde compartirla.
 Tener esta información es necesaria para prevenir accidentes.
 
 > Especificación de la solución del problema
 
-Para resolver este problema vamos a visualizar en una pantalla las direcciones de los sectores de escalada, dentro de cada dirección se mostrará el número de vías y el grado de cada vía que hay por sector. 
-La lógica de negocio procesará esta información calculando estadísticas sobre los sectores de escalada, como el número promedio de vías por sector o el grado de dificultad predominante, generando mapas de calor que muestren la concentración de vías de escalada en diferentes zonas de Granada o filtrar los sectores de escalada por grado de dificultad, número de vías o ubicación.
-La aplicación estará disponible como un sitio web y se utilizará una base de datos en la nube para almacenar la información para que los escaladores pudan de acceder a la información desde cualquier lugar.
-La obtención de la informacion se recopilará manualmente a través de la colaboración de escaladores y se extraerá de alguna fuente existente.
+La lógica de negocia será capaz de extraer mediante un texto la información que se le ha proporcionado, se extraera ubicación, sector, número de vías y nombre y grado de cada vía.
+
+La nomenclatura es siempre la misma:
+- Ubicación: Puede ser una ubicación de google o un texto que explica la localización del sector y como llegar hasta él. 
+- Sector: Nombre del sector
+- Vías: Número de vías
+- Nombre y grado: Nombre de la vía y su grado
+  
+Ejemplo:
+
+- Ubicación: Ubicación de google
+- Sector Avispa
+- Numero de vías: 2
+- Avispa 6b
+- El barrenazo 6b+
 
 ### Documentación
 
