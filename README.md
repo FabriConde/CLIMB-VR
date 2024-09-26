@@ -10,7 +10,6 @@ Tener esta información es necesaria para prevenir accidentes.
 
 > Especificación de la solución del problema
 
-La lógica de negocia será capaz de extraer mediante un texto la información que se le ha proporcionado, se extraera ubicación, sector, número de vías y nombre y grado de cada vía.
 La recopilación información será mediantes de textos existentes: como guías de escalada, publicaciones en blogs, foros o grupos de WhatsApp.
 
 La nomenclatura es siempre la misma:
