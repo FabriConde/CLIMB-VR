@@ -10,7 +10,10 @@ Tener esta información es necesaria para prevenir accidentes.
 
 > Especificación de la solución del problema
 
-Para resolver este problema vamos a visualizar en una pantalla las direcciones de los sectores de escalada, dentro de cada dirección se mostrará el número de vías y el grado de cada vía que hay por sector. La lógica de negocio procesará esta información.
+Para resolver este problema vamos a visualizar en una pantalla las direcciones de los sectores de escalada, dentro de cada dirección se mostrará el número de vías y el grado de cada vía que hay por sector. 
+La lógica de negocio procesará esta información calculando estadísticas sobre los sectores de escalada, como el número promedio de vías por sector o el grado de dificultad predominante, generando mapas de calor que muestren la concentración de vías de escalada en diferentes zonas de Granada o filtrar los sectores de escalada por grado de dificultad, número de vías o ubicación.
+La aplicación estará disponible como un sitio web y se utilizará una base de datos en la nube para almacenar la información para que los escaladores pudan de acceder a la información desde cualquier lugar.
+La obtención de la informacion se recopilará manualmente a través de la colaboración de escaladores y se extraerá de alguna fuente existente.
 
 ### Documentación
 
