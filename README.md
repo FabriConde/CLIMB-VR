@@ -27,7 +27,7 @@ Ejemplo:
 - Avispa 6b
 - El barrenazo 6b+
 
-Para que la lógica de negocio no sea trivial se prodría calcular la dificultad promedio de las rutas en una zona o filtrar las rutas que son aptas para cierto nivel de experiencia. Para que la información procesada fuera valiosa para un escalador que busca rutas que se ajusten a su nivel o que quiere explorar nuevas zonas.
+Para que la lógica de negocio no sea trivial se prodría calcular la dificultad promedio de las rutas en una zona o filtrar las rutas que son aptas para cierto nivel de experiencia. Para que la información procesada sea valiosa para un escalador que busca rutas que se ajusten a su nivel o que quiere explorar nuevas zonas.
 
 ### Documentación
 
