@@ -3,8 +3,9 @@
 ## OBJETIVO 0
 ### CLIENTE
 
-Como escalador me hallo con el problema de la falta de información que hay de los sectores de escalada en Granada. Buscando por Internet me he dado cuenta de que los croquis que existen están muy desactualizados o simplemente no existen.
-Los escaladores siempre hacen croquis de los sectores de escalada, donde se muestra el número de vías que hay y el grado de dificultad de cada una, pero al no haber ningún sitio donde poder añadir esa información no la pueden compartir.
+Como escalador me hallo con el problema de la falta de información que hay de los sectores de escalada en Granada. 
+Los escaladores locales son los que tienen las direcciones de los sectores de escalada, el número de vías y el grado de cada vía, pero no tienen nigún sitio donde compartirla.
+Tener esta información es necesaria para prevenir accidentes.
 
 > Especificación de la solución del problema
 
