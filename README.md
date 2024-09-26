@@ -11,6 +11,7 @@ Tener esta información es necesaria para prevenir accidentes.
 > Especificación de la solución del problema
 
 La lógica de negocia será capaz de extraer mediante un texto la información que se le ha proporcionado, se extraera ubicación, sector, número de vías y nombre y grado de cada vía.
+La recopilación información será mediantes de textos existentes: como guías de escalada en formato físico, publicaciones en blogs o foros, incluso documentos históricos o grupos de WhatsApp.
 
 La nomenclatura es siempre la misma:
 - Ubicación: Puede ser una ubicación de google o un texto que explica la localización del sector y como llegar hasta él. 
@@ -25,6 +26,8 @@ Ejemplo:
 - Numero de vías: 2
 - Avispa 6b
 - El barrenazo 6b+
+
+Para que la lógica de negocio no sea trivial se prodría calcular la dificultad promedio de las rutas en una zona o filtrar las rutas que son aptas para cierto nivel de experiencia. Para que la información procesada fuera valiosa para un escalador que busca rutas que se ajusten a su nivel o que quiere explorar nuevas zonas.
 
 ### Documentación
 
