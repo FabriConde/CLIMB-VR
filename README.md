@@ -31,3 +31,14 @@ Para que la lógica de negocio no sea trivial se prodría calcular la dificultad
 ### Documentación
 
 [Documentación](https://github.com/FabriConde/IV-2024-2025/tree/objetivo_0-v0.0.1/Documentaci%C3%B3n)
+
+## OBJETIVO 1
+### Historias de usuario
+
+#### [HU001] Como escalador, quiero ver la información de un sector, incluyendo su nombre, ubicación, número de vías y dificultad promedio, para decidir si se ajusta a mi nivel y planificar mi sesión de escalada.
+#### [HU002] Como escalador experimentado, quiero poder ver todas las vías de un sector ordenadas por dificultad para encontrar las que son adecuadas a mi nivel.
+
+### Milestone
+
+#### Milestone 0 (interno): Modelado del Dominio
+#### Milestone 1: Funcionalidades Básicas de Búsqueda y Filtrado
