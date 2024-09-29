@@ -10,7 +10,7 @@ Tener esta información es necesaria para prevenir accidentes.
 
 > Especificación de la solución del problema
 
-La recopilación información será mediantes de textos existentes: como guías de escalada, publicaciones en blogs, foros o grupos de WhatsApp.
+La recopilación información será mediante textos existentes: como guías de escalada, publicaciones en blogs, foros o grupos de WhatsApp.
 
 La nomenclatura es siempre la misma:
 - Ubicación: Puede ser una ubicación de google o un texto que explica la localización del sector y como llegar hasta él. 
@@ -38,7 +38,7 @@ Para que la lógica de negocio no sea trivial se prodría calcular la dificultad
 #### [[HU001] Obtener información general de un sector de escalada](https://github.com/FabriConde/IV-2024-2025/issues/2)
 #### [[HU002] Ver vías de un sector ordenadas por dificultad](https://github.com/FabriConde/IV-2024-2025/issues/3)
 
-### Milestone
+### Milestones
 
-#### Milestone 0: Modelado del Dominio
-#### Milestone 1: Funcionalidades Básicas de Búsqueda y Filtrado
+#### [[M0] : Modelado de la lógica de negocio](https://github.com/FabriConde/IV-2024-2025/milestone/1)
+#### [[M1] Funcionalidades Básicas de búsqueda y filtrado](https://github.com/FabriConde/IV-2024-2025/milestone/2)
