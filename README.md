@@ -42,3 +42,6 @@ Para que la lógica de negocio no sea trivial se prodría calcular la dificultad
 
 #### [[M0] : Modelado de la lógica de negocio](https://github.com/FabriConde/IV-2024-2025/milestone/1)
 #### [[M1] Funcionalidades Básicas de búsqueda y filtrado](https://github.com/FabriConde/IV-2024-2025/milestone/2)
+
+### User journey
+#### [Usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user%20journey.md)
