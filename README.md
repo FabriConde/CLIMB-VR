@@ -45,4 +45,4 @@ Para más información: [Historias de usuario](https://github.com/FabriConde/IV-
 Para más información: [Milestones](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/milestones.md)
 
 ### User journey
-Para más información: [Usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user%20journey.md)
+Para más información: [Usuarios](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user%20journey.md)
