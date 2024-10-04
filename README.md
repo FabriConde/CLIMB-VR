@@ -38,10 +38,10 @@ Para que la lógica de negocio no sea trivial se prodría calcular la dificultad
 Para más información: [Historias de usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/historias-usuario.md)
 
 ### Milestones
-#### [M0] Diseño del modelo de datos
-#### [M1] Implementación de la lógica
-#### [M2] Almacenamiento y recuperación
-#### [M1] Funcionalidades básicas de búsqueda y filtrado
+#### [M0] Especificación del modelo de datos
+#### [M1] Módulo de lógica de negocio
+#### [M2] Componente de persistencia de datos
+#### [M1] API de consulta de datos
 Para más información: [Milestones](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/milestones.md)
 
 ### User journey
