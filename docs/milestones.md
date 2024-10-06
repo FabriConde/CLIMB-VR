@@ -1,6 +1,25 @@
 # [[M0] Creación del modelo de datos](https://github.com/FabriConde/IV-2024-2025/milestone/1)
-- **Objetivo**: Crear el modelo de datos (entidades, clases, atributos, etc) y definir las relaciones que va a tener la aplicación.
-- **Entregable**: Definición de las clases o estructuras de datos necesarias para representar "sectores", "nombre", "ubicación", "número de vías", "grado de dificultad" y las relaciones entre ellas .  
+- **Objetivo**: Crear el modelo de datos (entidades y atributos) y definir las relaciones entre las entidades.
+- **Entregable**:   
+  - Entidades:
+    - Sector:
+      - Atributos:
+        - Nombre (String): Identificador único del sector.
+        - Ubicación (Objeto Ubicación): Información sobre la ubicación del sector.
+        - Número de vías (Integer): Cantidad total de vías en el sector.
+    - Ubicación:
+      - Atributos:
+        - Coordenadas GPS (String): Latitud y longitud.
+        - Descripción (String): Explicación detallada de cómo llegar al sector.
+    - Vía:
+      - Atributos:
+        - Nombre (String): Nombre de la vía.
+        - Grado de dificultad (String): Escala de dificultad (YDS, Francés, etc.).
+        - Metros (Integer): Longitud de la vía en metros.
+        - Descripción (String, opcional)
+  - Relaciones:
+    - Un sector tiene muchas vías (1:N).
+    - Un sector tiene una ubicación (1:1).
 - **Viabilidad**: Las relaciones entre las entidades deben ser implementadas de forma que reflejen con precisión la realidad del problema.
 
 # [[M1] Módulo de la lógica de negocio](https://github.com/FabriConde/IV-2024-2025/milestone/3)
