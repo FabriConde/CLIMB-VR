@@ -13,9 +13,9 @@ La recopilación información será mediante textos existentes: como guías de e
 
 La nomenclatura es siempre la misma:
 - Ubicación: Puede ser una ubicación de google o un texto que explica la localización del sector y como llegar hasta él. 
-- Sector: Nombre del sector
-- Vías: Número de vías
-- Nombre y grado: Nombre de la vía y su grado
+- Sector: Nombre del sector.
+- Vías: Número de vías.
+- Nombre, grado y metros: Nombre de la vía, su grado y los metros de la vía.
   
 Ejemplo:
 
@@ -23,7 +23,7 @@ Ejemplo:
 - Sector Avispa
 - Numero de vías: 2
 - Avispa 6b
-- El barrenazo 6b+
+- El barrenazo, 6b+, 25 metros
 
 Para que la lógica de negocio no sea trivial se prodría calcular la dificultad promedio de las rutas en una zona o filtrar las rutas que son aptas para cierto nivel de experiencia. Para que la información procesada sea valiosa para un escalador que busca rutas que se ajusten a su nivel o que quiere explorar nuevas zonas.
 
