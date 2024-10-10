@@ -1,0 +1,5 @@
+Lenguaje: Go
+Entidades:
+  - nombre: Sector
+  - nombre: Via
+  - nombre: Ubicacion
