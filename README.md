@@ -27,7 +27,7 @@ Para que la lógica de negocio no sea trivial se prodría calcular la dificultad
 ### Documentación
 [Documentación](https://github.com/FabriConde/CLIMB-VR/tree/main/docs)
 ### Configuración del repositorio
-
+[Configuración del repositorio](https://github.com/FabriConde/CLIMB-VR/tree/main/docs/config)
 ### Historias de usuario
 #### [HU001] Obtener información general de un sector de escalada
 #### [HU002] Ver vías de un sector ordenadas por dificultad
