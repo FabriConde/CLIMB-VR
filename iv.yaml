@@ -1,1 +1,5 @@
 lenguaje: go
+
+entidad: internal/sector.go
+entidad: internal/ubicacion.go
+entidad: internal/via.go
