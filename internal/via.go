@@ -38,7 +38,5 @@ type Via struct {
 	dificultad     DificultadEscalada
 	longitud       float32
 
-	tipoRoca       string
-	estiloEscalada string
 	infoExtra      string
 }
