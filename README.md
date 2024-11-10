@@ -24,24 +24,12 @@ Ejemplo:
 Para que la lógica de negocio no sea trivial se prodría calcular la dificultad promedio de las rutas en una zona o filtrar las rutas que son aptas para cierto nivel de experiencia. Para que la información procesada sea valiosa para un escalador que busca rutas que se ajusten a su nivel o que quiere explorar nuevas zonas.
 
 ## Información adicional
-### Documentación
-[Documentación](https://github.com/FabriConde/CLIMB-VR/tree/main/docs)
-### Configuración del repositorio
-[Configuración del repositorio](https://github.com/FabriConde/CLIMB-VR/tree/main/docs/config)
-### Historias de usuario
-#### [HU001] Obtener información general de un sector de escalada
-#### [HU002] Ver vías de un sector ordenadas por dificultad
-Para más información: [Historias de usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/historias-usuario.md)
-
-### Milestones
-#### [M0] Creación del modelo de datos
-#### [M1] Módulo de la lógica de negocio
-#### [M2] Componente de persistencia de datos
-#### [M1] API de consulta de datos
-Para más información: [Milestones](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/milestones.md)
-
-### User journey
-Para más información: [Usuarios](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user%20journey.md)
+### [Documentación](https://github.com/FabriConde/CLIMB-VR/tree/main/docs)
+### [Configuración del repositorio](https://github.com/FabriConde/CLIMB-VR/tree/main/docs/config)
+### [Historias de usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/historias-usuario.md)
+### [Milestones](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/milestones.md)
+### [Usuarios](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user%20journey.md)
+### Gestor de tareas 
 
 ## Lenguaje de programación
 El lenguaje de programación para este proyecto es: Go
