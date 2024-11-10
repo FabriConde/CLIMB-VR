@@ -24,12 +24,22 @@ Ejemplo:
 Para que la lógica de negocio no sea trivial se prodría calcular la dificultad promedio de las rutas en una zona o filtrar las rutas que son aptas para cierto nivel de experiencia. Para que la información procesada sea valiosa para un escalador que busca rutas que se ajusten a su nivel o que quiere explorar nuevas zonas.
 
 ## Información adicional
-### [Documentación](https://github.com/FabriConde/CLIMB-VR/tree/main/docs)
-### [Configuración del repositorio](https://github.com/FabriConde/CLIMB-VR/tree/main/docs/config)
-### [Historias de usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/historias-usuario.md)
-### [Milestones](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/milestones.md)
-### [Usuarios](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user%20journey.md)
-### Gestor de tareas 
+### **[Documentación](https://github.com/FabriConde/CLIMB-VR/tree/main/docs)**
+### **[Configuración del repositorio](https://github.com/FabriConde/CLIMB-VR/tree/main/docs/config)**
+### **[Historias de usuario](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/historias-usuario.md)**
+### **[Milestones](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/milestones.md)**
+### **[Usuarios](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user-journey.md)**
+### **[Gestor de tareas](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/gestor-tareas.md)**
+### **[Gestor de dependencias](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/gestor-dependencias.md)**
 
 ## Lenguaje de programación
 El lenguaje de programación para este proyecto es: Go
+
+## Gestor de tareas
+- `make build`: Construir el proyecto
+- `make test`: Ejecutar pruebas
+- `make clean`: Limpiar proyecto
+- `make run`: Ejecutar la aplicación
+- `make install`: Instalar dependencias
+- `make check`: Comprobar la sintaxis de la entidad 
+

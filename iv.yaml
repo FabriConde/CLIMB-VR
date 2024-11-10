@@ -1,0 +1,5 @@
+lenguaje: go
+entidad: internal/sector.go
+automatizar:
+  fichero: Makefile
+  orden: make
