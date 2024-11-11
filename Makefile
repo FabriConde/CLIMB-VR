@@ -1,7 +1,7 @@
 # Variables
 BINARY_NAME=CLIMB-VR
 SOURCE_DIR=./internal
-CHECK_FILE=internal/sector.go
+CHECK_FILES=internal/sector.go internal/via.go internal/ubicacion.go
 
 # Tareas
 .PHONY: build test clean run install check
@@ -34,10 +34,6 @@ install:
 
 //Comprobar la sintaxis de la entidad
 check:
-    @echo "Comprobando si el archivo $(CHECK_FILE) existe..."
-    @if [ -f "$(CHECK_FILE)" ]; then \
-        echo "El archivo $(CHECK_FILE) existe."; \
-    else \
-        echo "El archivo $(CHECK_FILE) no existe."; \
-        exit 1; \
-    fi
+    @echo "Comprobando la sintaxis de los archivos..."
+    go fmt $(CHECK_FILES)
+    go vet $(CHECK_FILES)
