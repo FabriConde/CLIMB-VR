@@ -22,7 +22,7 @@ clean:
     rm -f $(BINARY_NAME)
 
 //Ejecutar la aplicación
-run: build
+run:
     @echo "Ejecutando la aplicación..."
     ./$(BINARY_NAME)
 
