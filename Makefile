@@ -1,5 +1,5 @@
 # Variables
-BINARY_NAME=CLIMB-VR
+BINARY_NAME=climb-vr
 SOURCE_DIR=./internal
 CHECK_FILES=internal/sector.go internal/via.go internal/ubicacion.go
 
@@ -29,11 +29,9 @@ run: build
 //Instalar dependencias
 install:
     @echo "Instalando dependencias..."
-    go mod tidy
     go mod download
 
 //Comprobar la sintaxis de la entidad
 check:
     @echo "Comprobando la sintaxis de los archivos..."
-    go fmt $(CHECK_FILES)
     go vet $(CHECK_FILES)
