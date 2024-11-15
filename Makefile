@@ -34,4 +34,4 @@ install:
 //Comprobar la sintaxis de la entidad
 check:
     @echo "Comprobando la sintaxis de los archivos..."
-    go vet $(CHECK_FILES)
+    gofmt -e $(CHECK_FILES)
