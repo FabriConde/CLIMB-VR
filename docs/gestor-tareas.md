@@ -1,80 +1,37 @@
 # [Gestor de tareas](https://github.com/FabriConde/CLIMB-VR/issues/12)
 
-## Criterios de Evaluación
+## Selección del gestor de tareas
 
-- **Compatibilidad con Go**: La capacidad de la herramienta para integrarse y ejecutar comandos de Go.
-- **Facilidad de Configuración**: La simplicidad y claridad del proceso de configuración inicial y mantenimiento.
-- **Funcionalidad**: La capacidad de la herramienta para manejar tareas comunes y complejas.
-- **Adaptabilidad**: La flexibilidad de la herramienta para adaptarse a diferentes proyectos y entornos.
+Para seleccionar el gestor de tareas más adecuado para nuestro proyecto, seguimos un proceso estructurado que incluye la definición de criterios y la evaluación de diferentes herramientas en base a esos criterios.
 
-## Evaluación de Herramientas
+## Criterios de evaluación
+
+- **Simplicidad de configuración**: La herramienta debe requerir una configuración mínima para empezar a usarla.
+- **Claridad de la sintaxis**: La sintaxis debe ser clara y concisa.
+- **Funcionalidades básicas**: Debe permitir ejecutar tareas comunes como compilación, pruebas, limpieza, etc.
+
+## Evaluación de herramientas
 
 ### Make
 
-- **Compatibilidad con Go**: Alta. Make es compatible con Go y puede ejecutar comandos de Go como `go build`, `go test` y `go vet` directamente desde el Makefile.
-- **Facilidad de Configuración**: Moderada. Requiere escribir un Makefile, pero la sintaxis es bien documentada y hay muchos ejemplos disponibles.
-- **Funcionalidad**: Permite definir tareas de comunes y complejas.
-- **Adaptabilidad**: Alta. Make es muy flexible y puede adaptarse a una amplia variedad de proyectos y entornos.
-
-**Ventajas**:
-- Muy flexible y ampliamente utilizado.
-- Gran cantidad de ejemplos y documentación disponibles.
-- Amplia comunidad de usuarios y soporte.
-- Puede manejar tareas complejas y personalizadas.
-
-**Desventajas**:
-- Sintaxis puede ser confusa para principiantes.
-- Requiere mantenimiento manual del Makefile.
+- **Simplicidad de configuración**: Moderada, requiere escribir Makefiles. Aunque no es extremadamente complejo, puede llevar tiempo configurarlo correctamente.
+- **Claridad de la sintaxis**: Moderada, la sintaxis de Make puede ser compleja y difícil de leer, especialmente para usuarios nuevos.
+- **Funcionalidades básicas**: Sí, permite ejecutar tareas comunes como compilación, pruebas y limpieza.
 
 ### Mage
 
-- **Compatibilidad con Go**: Alta. Diseñada específicamente para Go, Mage permite definir tareas usando el propio lenguaje Go, lo que puede ser más intuitivo para los desarrolladores de Go.
-- **Facilidad de Configuración**: Alta. Usa Go para definir tareas, eliminando la necesidad de aprender una nueva sintaxis.
-- **Funcionalidad**: Su uso de Go para definir tareas lo hace muy intuitivo para desarrolladores Go y puede manejar tareas comunes y complejas.
-- **Adaptabilidad**: Alta. Mage permite aprovechar todas las capacidades del lenguaje Go, lo que lo hace muy adaptable a diferentes necesidades.
+- **Simplicidad de configuración**: Alta, se escribe en Go, lo que facilita la configuración para desarrolladores familiarizados con el lenguaje.
+- **Claridad de la sintaxis**: Alta, se usa Go, un lenguaje conocido por su claridad y simplicidad.
+- **Funcionalidades básicas**: Sí, permite ejecutar tareas comunes como compilación, pruebas y limpieza.
 
-**Ventajas**:
-- Usa Go para definir tareas, lo que puede ser más intuitivo para desarrolladores Go.
-- No requiere archivos adicionales como Makefile.
-- Puede aprovechar todas las capacidades del lenguaje Go para definir tareas.
+### Task
 
-**Desventajas**:
-- Menos popular que Make, por lo que puede haber menos ejemplos y soporte comunitario.
+- **Simplicidad de configuración**: Alta, configuración en YAML, un formato sencillo y fácil de leer.
+- **Claridad de la sintaxis**: Alta, YAML es claro y conciso, lo que facilita la comprensión y modificación de las configuraciones.
+- **Funcionalidades básicas**: Sí, permite ejecutar tareas comunes como compilación, pruebas y limpieza.
 
-### Sage
+## Conclusión
 
-- **Compatibilidad con Go**: Alta. Compatible con Go y puede ejecutar comandos de Go.
-- **Facilidad de Configuración**: Moderada. Similar a Make, pero con algunas mejoras en la sintaxis.
-- **Funcionalidad**: Permite definir tareas comunes y complejas. Similar a Make, pero con algunas mejoras en la sintaxis que pueden facilitar su uso.
-- **Adaptabilidad**: Moderada. Aunque es similar a Make, su menor popularidad puede limitar su adaptabilidad en algunos entornos.
-
-**Ventajas**:
-- Similar a Make, pero con algunas mejoras en la sintaxis.
-- Puede manejar tareas complejas y personalizadas.
-
-**Desventajas**:
-- Menos popular y menos soporte disponible.
-- Sintaxis y uso menos conocidos.
-
-### Gotaskr
-
-- **Compatibilidad con Go**: Alta. Compatible con Go y puede ejecutar comandos de Go.
-- **Facilidad de Configuración**: Alta. Usa YAML para definir tareas, lo que puede ser más fácil de leer y escribir.
-- **Funcionalidad**: Permite definir tareas comunes y complejas. Su uso de YAML para definir tareas lo hace muy legible y fácil de configurar.
-- **Adaptabilidad**: Alta. La legibilidad y facilidad de configuración de YAML hacen que Gotaskr sea muy adaptable a diferentes proyectos y entornos.
-
-**Ventajas**:
-- Usa YAML para definir tareas, lo que puede ser más fácil de leer y escribir.
-- Buena integración con sistemas CI/CD.
-- Puede manejar tareas complejas y personalizadas.
-
-**Desventajas**:
-- Menos popular que Make, por lo que puede haber menos ejemplos y soporte comunitario.
-
-## Justificación de la Elección de Make
-
-- **Compatibilidad con Go**: Make es altamente compatible con Go y puede ejecutar comandos de Go directamente desde el Makefile, esto permite integrar fácilmente las tareas.
-- **Facilidad de Configuración**: Aunque requiere escribir un Makefile, la sintaxis de Make es bien documentada y hay muchos ejemplos disponibles. Esto facilita la configuración inicial y el mantenimiento a largo plazo.
-- **Funcionalidad adecuada**: Make ofrece la funcionalidad necesaria para manejar tareas comunes y complejas.
-- **Necesidades de automatización a largo plazo**: Make es una herramienta robusta y ampliamente utilizada que puede manejar la automatización de tareas a largo plazo.
-- **Adaptabilidad**: Make es muy flexible y puede adaptarse a una amplia variedad de proyectos y entornos, lo que lo hace una opción robusta para diferentes necesidades.
+No conozco ningún gestores de tareas, pero mi opción elegida es `Make` ya que me resulta particularmente interesante y deseo aprender a utilizarlo. 
+A pesar de que su sintaxis puede parecer complicada para algunos, estoy motivado por el desafío y confío en que su capacidad para manejar las tareas.
+Además, Make cumple con todos los criterios de evaluación mencionados.
