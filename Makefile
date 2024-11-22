@@ -15,11 +15,7 @@ test:
 clean:
     @echo "Limpiando archivos binarios..."
     rm -f $(BINARY_NAME)
-
-run:
-    @echo "Ejecutando la aplicación..."
-    ./$(BINARY_NAME)
-
+    
 install:
     @echo "Instalando dependencias..."
     go mod download
