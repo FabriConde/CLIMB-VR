@@ -37,6 +37,5 @@ type Via struct {
 	nombre         string
 	dificultad     DificultadEscalada
 	longitud       float32
-
 	infoExtra      string
 }

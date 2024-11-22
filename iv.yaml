@@ -1,6 +1,8 @@
 lenguaje: go
-
 entidades:
   - internal/sector.go
   - internal/ubicacion.go
   - internal/via.go
+automatizar:
+  fichero: Makefile
+  orden: make
