@@ -39,7 +39,6 @@ El lenguaje de programación para este proyecto es: Go
 - `make build`: Construir el proyecto
 - `make test`: Ejecutar pruebas
 - `make clean`: Limpiar proyecto
-- `make run`: Ejecutar la aplicación
 - `make install`: Instalar dependencias
 - `make check`: Comprobar la sintaxis de la entidad 
 
