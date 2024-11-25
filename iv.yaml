@@ -1,5 +1,5 @@
 lenguaje: go
-entidades:
+entidad:
   - internal/models/sector.go
   - internal/models/via.go
   - internal/models/mapa_sectores.go
