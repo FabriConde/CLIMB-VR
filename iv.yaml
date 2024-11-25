@@ -6,4 +6,4 @@ entidades:
 automatizar:
   fichero: Makefile
   orden: make
-test: internal/services/texto_test.go
+test: internal/service/texto_test.go
