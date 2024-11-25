@@ -100,22 +100,42 @@ func EliminarLineasVaciasDelTexto(lineas []string) []string {
 }
 
 func ComprobarQueSoloExisteInformacionDelSectorAlInicioYNoSeRepite(lineas []string) (bool, error) {
-	if !strings.HasPrefix(lineas[0], "Sector:") {
-		return false, fmt.Errorf("la primera línea no contiene 'Sector:'")
+	if !strings.HasPrefix(strings.ToLower(lineas[0]), "sector:") {
+		return false, fmt.Errorf("la primera línea no contiene 'sector:'")
 	}
 
 	for _, linea := range lineas[1:] {
-		if strings.Contains(linea, "Sector:") {
-			return false, fmt.Errorf("existen varias lineas que contienen 'Sector:'")
+		if strings.Contains(strings.ToLower(linea), "sector:") {
+			return false, fmt.Errorf("existen varias lineas que contienen 'sector:'")
 		}
 	}
 
 	return true, nil
 }
 
+func NormalizarCadena(cadena string) string {
+	cadena = strings.ToLower(cadena)
+	reemplazos := map[string]string{
+		"á": "a",
+		"é": "e",
+		"í": "i",
+		"ó": "o",
+		"ú": "u",
+		"Á": "a",
+		"É": "e",
+		"Í": "i",
+		"Ó": "o",
+		"Ú": "u",
+	}
+	for original, reemplazo := range reemplazos {
+		cadena = strings.ReplaceAll(cadena, original, reemplazo)
+	}
+	return cadena
+}
+
 func ComprobarQueExisteLaPalabraVias(lineas []string) (bool, error) {
 	for _, linea := range lineas {
-		if strings.TrimSpace(linea) == "Vias:" {
+		if NormalizarCadena(strings.TrimSpace(linea)) == "vias:" {
 			return true, nil
 		}
 	}
@@ -124,20 +144,16 @@ func ComprobarQueExisteLaPalabraVias(lineas []string) (bool, error) {
 
 func ObtenerLasLineasDondeEstanLasViasElimnadoLasPalabrasViasQueSeRepite(lineas []string) []string {
 	var lineasDeVias []string
-	seEncuntraPalabraVias := false
+	seEncuentraPalabraVias := false
 
 	for _, linea := range lineas {
-		if strings.TrimSpace(linea) == "Vias:" {
-			seEncuntraPalabraVias = true
+		if NormalizarCadena(strings.TrimSpace(linea)) == "vias:" {
+			seEncuentraPalabraVias = true
 			continue
 		}
 
-		if seEncuntraPalabraVias {
-			if strings.TrimSpace(linea) == "" {
-				seEncuntraPalabraVias = false
-			} else {
-				lineasDeVias = append(lineasDeVias, strings.TrimSpace(linea))
-			}
+		if seEncuentraPalabraVias {
+			lineasDeVias = append(lineasDeVias, strings.TrimSpace(linea))
 		}
 	}
 
@@ -155,6 +171,7 @@ func ComprobarQueLasLineasSonSuficientesParaCrearSectorYVias(lineas []string) (b
 func SepararEnPartesUnaLineaPorLaComa(linea string) []string {
 	partes := strings.Split(linea, ",")
 	partes = EliminarEspaciosEnBlanco(partes)
+	partes = EliminarPartesVacias(partes)
 	return partes
 }
 
@@ -165,9 +182,23 @@ func EliminarEspaciosEnBlanco(partes []string) []string {
 	return partes
 }
 
+func EliminarPartesVacias(partes []string) []string {
+	var partesSinVacias []string
+	for _, parte := range partes {
+		if parte != "" {
+			partesSinVacias = append(partesSinVacias, parte)
+		}
+	}
+	return partesSinVacias
+}
+
 func ComprobarQueLaPrimeraLineaContieneInformacionNecesariaParaCrearSector(parteSector []string) (bool, error) {
 	if len(parteSector) < 2 {
 		return false, fmt.Errorf("no contiene suficiente información para crear un sector")
+	}
+
+	if len(parteSector) == 2 && strings.HasPrefix(parteSector[1], "https") {
+		return false, fmt.Errorf("el segundo valor del sector no debe comenzar con 'https', dede ser una descripción")
 	}
 
 	return true, nil
@@ -205,14 +236,14 @@ func GuardarUbicacionSector(infoSector []string) (*models.Ubicacion, error) {
 
 func ExisteViaEnSector(nombreVia string, vias map[string]*models.Via) error {
 	if _, ok := vias[nombreVia]; ok {
-		return fmt.Errorf("la vía ya existe: %s", nombreVia)
+		return fmt.Errorf("la vía ya existe en el sector")
 	}
 	return nil
 }
 
 func AddDificultadVia(partesTextoVia []string) (models.DificultadEscalada, error) {
 	if !models.EsUnaDificultadValida(partesTextoVia[1]) {
-		return "", fmt.Errorf("la dificultad no cumple con los estandares: %s", partesTextoVia[1])
+		return "", fmt.Errorf("la dificultad no cumple con los estandares")
 	}
 
 	return models.DificultadEscalada(partesTextoVia[1]), nil
@@ -221,7 +252,15 @@ func AddDificultadVia(partesTextoVia []string) (models.DificultadEscalada, error
 func AddLongitudVia(partesTextoVia []string) (float32, error) {
 	longitud, err := strconv.ParseFloat(partesTextoVia[2], 32)
 	if err != nil {
-		return 0, fmt.Errorf("longitud inválida: %s", partesTextoVia[2])
+		return 0, fmt.Errorf("longitud inválida")
+	}
+
+	if longitud < 0 {
+		return 0, fmt.Errorf("la longitud no puede ser negativa")
+	}
+
+	if longitud > 300 {
+		return 0, fmt.Errorf("la longitud no puede ser mayor de 300")
 	}
 
 	return float32(longitud), nil
