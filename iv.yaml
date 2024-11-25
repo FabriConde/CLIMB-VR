@@ -1,8 +1,9 @@
 lenguaje: go
 entidades:
-  - internal/sector.go
-  - internal/ubicacion.go
-  - internal/via.go
+  - internal/models/sector.go
+  - internal/models/via.go
+  - internal/models/mapa_sectores.go
 automatizar:
   fichero: Makefile
   orden: make
+test: internal/services/texto_test.go
