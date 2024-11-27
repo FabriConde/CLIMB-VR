@@ -31,6 +31,7 @@ Para que la lógica de negocio no sea trivial se prodría calcular la dificultad
 ### [Usuarios](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/user-journey.md)
 ### [Gestor de tareas](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/gestor-tareas.md)
 ### [Gestor de dependencias](https://github.com/FabriConde/IV-2024-2025/blob/objetivo_1/docs/gestor-dependencias.md)
+### [Herramientas de test](https://github.com/FabriConde/CLIMB-VR/blob/objetivo_4/docs/herramientas-test.md)
 
 ## Lenguaje de programación
 El lenguaje de programación para este proyecto es: Go

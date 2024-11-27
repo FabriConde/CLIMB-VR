@@ -10,7 +10,7 @@ build:
 
 test:
     @echo "Ejecutando pruebas..."
-    go test ./...
+    go test -v ./...
 
 clean:
     @echo "Limpiando archivos binarios..."
