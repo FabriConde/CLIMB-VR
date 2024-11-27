@@ -46,6 +46,7 @@ Si se necesita hacer pruebas de integración que dependan de contenedores, como 
 
 # Principios F.I.R.S.T. en la creación del test 
 En el contexto de creación de pruebas de software, F.I.R.S.T. es un conjunto de principios fundamentales que guían la escritura de pruebas unitarias efectivas y de calidad.
+
 **Se tiene que verificar que:**
 - Fast (Rápidas): Las pruebas deben ejecutarse rápidamente para no ralentizar el ciclo de desarrollo.
 - Independent (Independientes): Cada prueba debe ser independiente de las demás, sin depender del orden de ejecución.
@@ -57,7 +58,7 @@ En el contexto de creación de pruebas de software, F.I.R.S.T. es un conjunto de
 
 Testify es una de las bibliotecas más populares y poderosas para pruebas unitarias en Go, especialmente útil cuando el enfoque principal es probar la lógica de negocio. Proporciona herramientas como aserciones y mocks, que simplifican la escritura de pruebas claras, comprensibles y efectivas. Dado que Testify se integra bien con el sistema de pruebas estándar de Go, aprovechar ambas herramientas, la biblioteca de pruebas integrada en Go y Testify, será una excelente opción para garantizar la calidad y fiabilidad del código en mi proyecto.
 
-En cuanto a los principios F.I.R.S.T.
+Las pruebas cumplen con los principios F.I.R.S.T:
 - Fast (Rápidas): Las pruebas son rápidas ya que no dependen de recursos externos ni realizan operaciones costosas.
 - Independent (Independientes): Cada prueba es independiente y no depende del resultado de otras pruebas.
 - Repeatable (Repetibles): Las pruebas son repetibles ya que los resultados no dependen del entorno externo.
